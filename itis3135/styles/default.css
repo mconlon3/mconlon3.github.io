@@ -1,0 +1,16 @@
+body{
+    background-color:hsl(270, 25%, 75%);
+    color: hsl(270, 15%,25%);
+    font-size:40px;
+    font-family: "Lucida Sans", "sans-serif";
+    text-align:center;
+    margin:auto;
+}
+
+h1, h2, h3{
+    font-family:'Courier New', Courier, monospace;
+    color: hsl(270, 15%,25%);
+    font-size: 60px;
+    text-align:center;
+    margin:auto;
+}
