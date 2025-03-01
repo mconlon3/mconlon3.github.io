@@ -36,3 +36,38 @@ figure{
 footer{
     text-decoration: none;
 }
+
+a {
+    color: hsl(270, 50%, 40%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: hsl(270, 60%, 30%);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: hsl(270, 50%, 40%);
+}
+
+a:active {
+    color: hsl(270, 70%, 30%);
+}
+
+@media (max-width: 768px) {
+    main {
+        max-width: 768px;
+        width:90%;
+        margin:0;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        max-width: 1024px;
+        width:90%;
+        margin:0;
+    }
+}
