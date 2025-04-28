@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodingsCrazy - Project Gallery</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/gallery.js"></script>
+        <style>
+            .title{
+                font-size:24px;
+            }
+
+            .tagline{
+                font-size:20px;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .container {
+                position: relative;
+            }
+
+            .slides {
+                display: none;
+            }
+
+            .cursor {
+                cursor: pointer;
+            }
+
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 40%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: rgb(226, 226, 226);
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 0 2.4px 2.4px 0;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+
+            .next {
+                right: 0;
+                border-radius: 2.4px 0 0 2.4px;
+            }
+
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(27, 27, 27, 0.643);
+            }
+
+            .numbertext {
+                color: #ebebeb;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            .caption-container {
+                text-align: center;
+                padding: 2px 16px;
+                background-color: #B8B8FF;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .column {
+                float: left;
+                width: 12.5%;
+            }
+
+            .demo {
+             opacity: 0.55;
+            }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        
+        <main>
+            <button id="darkButton">Dark Mode</button>
+            <h2>Project Gallery</h2>
+            <p>If you're looking for inspiration for projects, this is the place.</p>
+            <p>Click the images below to start viewing the preview images.</p>
+            <p class="disclaimer">Please note that these projects link to external sites and are not created by the developer of the website. Projects owned by GitHub user <a href="https://github.com/bradtraversy">bradtraversy</a>.</p>
+            <div class="container">
+                <div class="slides">
+                    <div class="slideNum"></div>
+                    <a href="https://html-preview.github.io/?url=https://github.com/bradtraversy/50projects50days/blob/master/simple-timer/index.html" target="_blank">
+                        <img src="images/pj1.png" style="width:100%">
+                    </a>
+                </div>
+                
+                <div class="slides">
+                    <div class="slideNum"></div>
+                    <a href="https://htmlpreview.github.io/?https://github.com/bradtraversy/50projects50days/blob/master/dad-jokes/index.html" target="_blank">
+                        <img src="images/pj2.png" style="width:100%">
+                    </a>
+                </div>
+                
+                <div class="slides">
+                    <div class="slideNum"></div>
+                    <a href="https://html-preview.github.io/?url=https://github.com/bradtraversy/50projects50days/blob/master/3d-boxes-background/index.html" target="_blank">
+                        <img src="images/pj3.png" style="width:100%">
+                    </a>
+                </div>
+                
+                <div class="slides">
+                    <div class="slideNum"></div>
+                    <a href="https://html-preview.github.io/?https://github.com/bradtraversy/50projects50days/blob/master/netflix-mobile-navigation/index.html#" target="_blank">
+                        <img src="images/pj4.png" style="width:100%">
+                    </a>
+                </div>
+                
+                <div class="slides">
+                    <div class="slideNum"></div>
+                    <a href="https://html-preview.github.io/?url=https://github.com/bradtraversy/50projects50days/blob/master/password-generator/index.html" target="_blank">
+                        <img src="images/pj5.png" style="width:100%">
+                    </a>
+                </div>
+                
+                <div class="slides">
+                    <div class="slideNum"></div>
+                    <a href="https://html-preview.github.io/?url=https://github.com/bradtraversy/50projects50days/blob/master/password-strength-background/index.html" target="_blank">
+                        <img src="images/pj6.png" style="width:100%">
+                    </a>
+                </div>
+                
+                <div class="slides">
+                    <div class="slideNum"></div>
+                    <a href="https://html-preview.github.io/?url=https://github.com/bradtraversy/50projects50days/blob/master/pokedex/index.html" target="_blank">
+                        <img src="images/pj7.png" style="width:100%">
+                    </a>
+                </div>
+                
+                <div class="slides">
+                    <div class="slideNum"></div>
+                    <a href="https://html-preview.github.io/?url=https://github.com/bradtraversy/50projects50days/blob/master/image-carousel/index.html" target="_blank">
+                        <img src="images/pj8.png" style="width:100%">
+                    </a>
+                </div>
+            
+                <a class = "prev" onclick = "changeSlide(-1)">&#10094;</a>
+                <a class = "next" onclick = "changeSlide(1)">&#10095;</a>
+            
+                <div class = "caption-container">
+                    <p id = "caption"></p>
+                </div>
+            
+                <div class = "row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/pj1.png" style="width:100%" onclick="updateSlide(1)" alt="This is an extremely simple timer.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/pj2.png" style="width:100%" onclick="updateSlide(2)" alt="This project tells dad jokes.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/pj3.png" style="width:100%" onclick="updateSlide(3)" alt="This project is a mockup of a Netflix mobile adaptation.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/pj4.png" style="width:100%" onclick="updateSlide(4)" alt="This project is 3D boxes with images on it.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/pj5.png" style="width:100%" onclick="updateSlide(5)" alt="This project generates a password.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/pj6.png" style="width:100%" onclick="updateSlide(6)" alt="This project tests how secure a password is.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/pj7.png" style="width:100%" onclick="updateSlide(7)" alt="This project is a PokeDex simulator.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/pj8.png" style="width:100%" onclick="updateSlide(8)" alt="This project is a slideshow (like the one you're viewing right now!)">
+                    </div>
+                </div>
+            </div> 
+            
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/include.js"></script>
+    </body>
+</html>

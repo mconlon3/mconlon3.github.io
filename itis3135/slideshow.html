@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Marcus Conlon's Mindful Clownfish * Slideshow</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/slideshow.js"></script>
+        <style>
+            .title{
+                font-size:24px;
+            }
+
+            .tagline{
+                font-size:20px;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .container {
+                position: relative;
+            }
+
+            .slides {
+                display: none;
+            }
+
+            .cursor {
+                cursor: pointer;
+            }
+
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 40%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: rgb(226, 226, 226);
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 0 2.4px 2.4px 0;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+
+            .next {
+                right: 0;
+                border-radius: 2.4px 0 0 2.4px;
+            }
+
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(27, 27, 27, 0.643);
+            }
+
+            .numbertext {
+                color: #ebebeb;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            .caption-container {
+                text-align: center;
+                background-color: #e3d6e6;
+                padding: 2px 16px;
+                color: rgb(28, 26, 28);
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .column {
+                float: left;
+                width: 16.66%;
+            }
+
+            .demo {
+            opacity: 0.55;
+            }
+
+            .active,
+            .demo:hover {
+            opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        
+        <main>
+            <h2 class="title">Slideshow:</h2>
+            <p class="tagline">My Name as Images</p>
+            <div class="container">
+                <div class="slides">
+                    <div class="slideNum">1 / 12</div>
+                        <img src="images/ss1.png" style="width:100%">
+                </div>
+            
+                <div class="slides">
+                    <div class="slideNum">2 / 12</div>
+                        <img src="images/ss2.png" style="width:100%">
+                </div>
+            
+                <div class="slides">
+                    <div class="slideNum">3 / 12</div>
+                        <img src="images/ss3.png" style="width:100%">
+                </div>
+            
+                <div class="slides">
+                    <div class="slideNum">4 / 12</div>
+                        <img src="images/ss4.png" style="width:100%">
+                </div>
+            
+                <div class="slides">
+                    <div class="slideNum">5 / 12</div>
+                        <img src="images/ss5.png" style="width:100%">
+                </div>
+            
+                <div class="slides">
+                    <div class="slideNum">6 / 12</div>
+                        <img src="images/ss6.png" style="width:100%">
+                </div>
+
+                <div class="slides">
+                    <div class="slideNum">7 / 12</div>
+                        <img src="images/ss7.png" style="width:100%">
+                </div>
+            
+                <div class="slides">
+                    <div class="slideNum">8 / 12</div>
+                        <img src="images/ss8.png" style="width:100%">
+                </div>
+            
+                <div class="slides">
+                    <div class="slideNum">9 / 12</div>
+                        <img src="images/ss9.png" style="width:100%">
+                </div>
+            
+                <div class="slides">
+                    <div class="slideNum">10 / 12</div>
+                        <img src="images/ss10.png" style="width:100%">
+                </div>
+            
+                <div class="slides">
+                    <div class="slideNum">11 / 12</div>
+                        <img src="images/ss11.png" style="width:100%">
+                </div>
+            
+                <div class = "slides">
+                    <div class = "slideNum">12 / 12</div>
+                        <img src = "images/ss12.png" style="width:100%">
+                </div>
+            
+                <a class = "prev" onclick = "changeSlide(-1)">&#10094;</a>
+                <a class = "next" onclick = "changeSlide(1)">&#10095;</a>
+            
+                <div class = "caption-container">
+                    <p id = "caption"></p>
+                </div>
+            
+                <div class = "row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/ss1.png" style="width:100%" onclick="updateSlide(1)" alt="M is for MONEY">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/ss2.png" style="width:100%" onclick="updateSlide(2)" alt="A is for AFTERNOON">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/ss3.png" style="width:100%" onclick="updateSlide(3)" alt="R is for RULER">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/ss4.png" style="width:100%" onclick="updateSlide(4)" alt="C is for COFFEE">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/ss5.png" style="width:100%" onclick="updateSlide(5)" alt="U is for UMBRELLA">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/ss6.png" style="width:100%" onclick="updateSlide(6)" alt="S is for SALAD">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="images/ss7.png" style="width:100%" onclick="updateSlide(7)" alt="C is for CHIPS">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/ss8.png" style="width:100%" onclick="updateSlide(8)" alt="O is for OAK">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/ss9.png" style="width:100%" onclick="updateSlide(9)" alt="N is for NECKLACE">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/ss10.png" style="width:100%" onclick="updateSlide(10)" alt="L is for LASSO">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/ss11.png" style="width:100%" onclick="updateSlide(11)" alt="O is for ORANGE">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/ss12.png" style="width:100%" onclick="updateSlide(12)" alt="N is for NAIL">
+                    </div>
+                </div>
+            </div> 
+        </main>
+        
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src = "scripts/include.js"></script>
+    </body>
+</html>

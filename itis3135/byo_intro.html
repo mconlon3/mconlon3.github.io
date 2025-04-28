@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Marcus Conlon's Mindful Clownfish * BYO Intro</title>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        
+        <main>
+            <h2>BYO Intro</h2>
+            <h3>Want to Build Your Own Intro page? Fill out the form below so we can create your own page.</h3>
+            <form id="intro">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" value="Marcus" required><br>
+
+                <label for="mascot">Mascot: </label>
+                <input type="text" id="mascot" name="mascot" value="Mindful Clownfish" required><br>
+
+                
+
+                <label for="img">Image Upload:</label>
+                <input type="file" id="img" name="img" accept=".jpeg,.jpg,.png" required><br>
+
+                <label for="name">Image Caption: </label>
+                <input type="text" id="imgcap" name="imgcap" value="An image of Pikachu." required><br>
+
+                <label for="per_bg">Personal Background: </label>
+                <input type="text" id="per_bg" name="per_bg" value="I have lived in North Carolina my whole life..." required><br>
+
+                <label for="pro_bg">Professional Background: </label>
+                <input type="text" id="pro_bg" name="pro_bg" value="I do not have much professional experience yet..." required><br>
+
+                <label for="aca_bg">Academic Background: </label>
+                <input type="text" id="aca_bg" name="aca_bg" value="I took AP classes in highschool..." required><br>
+
+                <label for="web_bg">Background in Web Development: </label>
+                <input type="text" id="web_bg" name="web_bg" value="I do not have any background in web development yet..." required><br>
+
+                <label for="pcp">Primary Computer Platform: </label>
+                <input type="text" id="pcp" name="pcp" value="Windows Laptop" required><br>
+
+                courses
+
+                <label for="extra_funny">Something funny: </label>
+                <input type="text" id="extra_funny" name="extra_funny" value="A funny story that happened to me once..." required><br>
+
+                <label for="extra_else">Anything else: </label>
+                <input type="text" id="extra_else" name="extra_else" value="I like this video game..." required><br>
+
+                checkbox
+
+                submit
+
+                <label for="agree"></label>
+                <input type="checkbox" id="agree" name="agree" required>
+                    I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+                <br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+                
+
+            </form>
+            
+            
+        </main>
+        
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/include.js"></script>
+    </body>
+</html>

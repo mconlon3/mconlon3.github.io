@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodingsCrazy - Main Site</title>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        
+        <main>
+            <button id="darkButton">Dark Mode</button>
+            <h2>Learning HTML</h2>
+            
+            <h3>
+                What is HTML?
+            </h3>
+            <p>
+                HTML is the foundation for websites... like the one you're viewing right now!
+            </p>
+            <p>
+                HTML stands for HyperText Markup Language.
+            </p>
+            <p>
+                The HTML filetype is made up of HTML code, which is made up of <span class="bold">elements</span>.
+            </p>
+
+            <div id="table of contents">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#basic">Basic Elements</a></li>
+                    <li><a href="#text">Text Elements</a></li>
+                    <li><a href="#list">List Elements</a></li>
+                    <li><a href="#image">Image Elements</a></li>
+                    <li><a href="#table">Table Elements</a></li>
+                    <li><a href="#after">Styles</a></li>
+                    <li><a href="#end">End</a></li>
+                </ul>
+            </div>
+
+            <figure class="imag2">
+                <img src="images/html.png" alt="An image of HTML." width="600">
+            </figure>
+            <section id="basic">
+                <h3>
+                    Basic Structure
+                </h3>
+                <p>
+                    To begin with HTML, you'll need to know the basics.
+                </p>
+                <ul>
+                    <li>&lt;!DOCTYPE html&gt; indicates that the language is HTML.</li>
+                    <li>&lt;head&gt; indicates important data about the website that isn't shown visually. For example, it includes the title of the webpage.</li>
+                    <li>&lt;body&gt; is the main part of your website, what will be shown to the user.</li>
+                    <li>All three of these elements must include closing tags, which will look like this:</li>
+                    <li>&lt;head&gt;&lt;/head&gt;</li>
+                    <li>It's important to remember this!</li>
+                </ul>
+    
+            </section>
+            
+            <section id="text">
+                <h3>Text Elements</h3>
+            <p>These elements will help you display text on your page.</p>
+            <ul>
+                <li><code>&lt;h#&gt;</code>: Heading elements, replace the # with a number 1 through 6, 1 being the most important and 6 being the least.</li>
+                <li><code>&lt;p&gt;</code>: Paragraph element, used to show text.</li>
+                <li><code>&lt;a&gt;</code>: Anchor element, used for hyperlinks.</li>
+                <li><code>&lt;br&gt;</code>: Line break element, self explanatory.</li>
+                <li><code>&lt;blockquote&gt;</code>: An element that appears as a quote.</li>
+            </ul>
+            </section>
+
+            <section id="list">
+                <h3>List Elements</h3>
+                <p>These elements will help you display lists. If you notice the bullet points below, that's an unordered list!</p>
+                <ul>
+                    <li><code>&lt;ul&gt;</code>: Unordered list, typically displayed with bullet points.</li>
+                    <li><code>&lt;ol&gt;</code>: Ordered list, typically displayed with numbers.</li>
+                    <li><code>&lt;li&gt;</code>: List item used inside <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>.</li>
+                </ul>
+            </section>
+            
+            <section id="image"><h3>Image and Media</h3>
+                <p>These elements will allow you to add visuals, preventing your website from just being filled with text.</p>
+                <ul>
+                    <li><code>&lt;img&gt;</code>: Image tag, used to embed images into the webpage. The <code>src</code> attribute is used to specify the image location.</li>
+                    <li><code>&lt;audio&gt;</code>: Embeds audio files, allowing users to play them on your page.</li>
+                    <li><code>&lt;video&gt;</code>: Embeds video files on the page.</li>
+                </ul></section>
+
+            <section id="table">
+                <h3>Table Elements</h3>
+                <p>These elements will show a table.</p>
+                <ul>
+                    <li><code>&lt;table&gt;</code>: Defines the table.</li>
+                    <li><code>&lt;tr&gt;</code>: Table row.</li>
+                    <li><code>&lt;th&gt;</code>: Table header cell.</li>
+                    <li><code>&lt;td&gt;</code>: Table data cell.</li>
+                </ul>
+                <p>Here is a visual example of a table created by HTML.</p>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Will</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Lisa</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Jun</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Drew</td>
+                        <td>D</td>
+                    </tr>
+                </table>
+                <p>The Name and Grade are table header elements.</p>
+                <p>
+                    All the names and grades are seperated by table row elements.
+                </p>
+                <p>The names and grades are table data elements.</p>
+            </section>
+
+
+            <section id="after">  <h3>
+                After the Basics...
+            </h3>
+            <p>These basics will take you surprisingly far.</p>
+            <p>But your webpage will look very barren, it'll be black text on a white background.</p>
+            <p>Notice how this website uses purple text? That's created using <strong>Styles</strong>.</p>
+
+            <p>In your head element, this is where you can put a style element.</p>
+            &lt;style&gt;<br>
+                fill in here!<br>
+            &lt;/style&gt;
+            </code></pre>
+
+            <p>Style properties are formatted like so:</p>
+            <code>elementName{<br>
+            <p>‎ ‎ property: value;</p>
+            <br>}</code> 
+            
+            <p>Replace elementName with the element you are modifying, property with the property you will modify, and value with the value.</p>
+            <p>To get purple text like this website, the BODY element was modified, the color PROPERTY's VALUE was set to a hexidecimal color for purple.</p>
+</section>
+          <section id="end"><h3>End</h3>
+            <p>Hopefully these basics can help you start out your HTML journey. Remember that the internet can always help you if you're stuck!</p></section>
+            
+            
+        </main>
+
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/include.js"></script>
+    </body>
+</html>
