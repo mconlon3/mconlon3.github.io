@@ -16,12 +16,12 @@ h1, h2, h3{
     margin-bottom:20px;
 }
 
-button.reset_button{
+.reset_button{
     background-color: #470808;
     color: #ffffff;
 }
 
-button.submit_button{
+.submit_button{
     background-color: #53dc61;
     color: #0c0f0c;
 }
