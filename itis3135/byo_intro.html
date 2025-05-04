@@ -21,8 +21,6 @@
                 <label for="mascot">Mascot: </label>
                 <input type="text" id="mascot" name="mascot" value="Mindful Clownfish" required><br>
 
-                
-
                 <label for="img">Image Upload:</label>
                 <input type="file" id="img" name="img" accept=".jpeg,.jpg,.png" required><br>
 
@@ -44,17 +42,22 @@
                 <label for="pcp">Primary Computer Platform: </label>
                 <input type="text" id="pcp" name="pcp" value="Windows Laptop" required><br>
 
-                courses
+                <fieldset>
+                    <legend>Courses Currently Taking</legend>
+                    <div id="coursesContainer">
+                      <div class="courseField">
+                        <input type="text" placeholder="Enter a course">
+                        <button type="button" class="deleteCourse">Delete</button>
+                      </div>
+                    </div>
+                    <button type="button" id="addCourse">Add Course</button>
+                  </fieldset>
 
                 <label for="extra_funny">Something funny: </label>
                 <input type="text" id="extra_funny" name="extra_funny" value="A funny story that happened to me once..." required><br>
 
                 <label for="extra_else">Anything else: </label>
                 <input type="text" id="extra_else" name="extra_else" value="I like this video game..." required><br>
-
-                checkbox
-
-                submit
 
                 <label for="agree"></label>
                 <input type="checkbox" id="agree" name="agree" required>
@@ -63,12 +66,10 @@
 
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
-
-                
-
             </form>
             
-            
+            <script src="scripts/survey.js"></script>
+
         </main>
         
         <footer>
