@@ -99,12 +99,15 @@
         
         <main>
             <button id="darkButton">Dark Mode</button>
+            <!--Page description-->
             <h2>Project Gallery</h2>
             <p>If you're looking for inspiration for projects, this is the place.</p>
             <p>Click the images below to start viewing the preview images.</p>
+            <!--Disclaimer and Slideshow container-->
             <p class="disclaimer">Please note that these projects link to external sites and are not created by the developer of the website. Projects owned by GitHub user <a href="https://github.com/bradtraversy">bradtraversy</a>.</p>
             <div class="container">
                 <div class="slides">
+                    <!--Individual images for the slideshow, all clickable-->
                     <div class="slideNum"></div>
                     <a href="https://html-preview.github.io/?url=https://github.com/bradtraversy/50projects50days/blob/master/simple-timer/index.html" target="_blank">
                         <img src="images/pj1.png" style="width:100%">
@@ -160,13 +163,16 @@
                     </a>
                 </div>
             
+                <!--Code to change slide-->
                 <a class = "prev" onclick = "changeSlide(-1)">&#10094;</a>
                 <a class = "next" onclick = "changeSlide(1)">&#10095;</a>
             
+                <!--Displays the caption, allowing the user to see what the project is-->
                 <div class = "caption-container">
                     <p id = "caption"></p>
                 </div>
             
+                <!--Captions-->
                 <div class = "row">
                     <div class="column">
                         <img class="demo cursor" src="images/pj1.png" style="width:100%" onclick="updateSlide(1)" alt="This is an extremely simple timer.">
